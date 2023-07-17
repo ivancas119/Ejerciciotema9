@@ -1,0 +1,29 @@
+public class ejercicio {
+    public static void main(String[] args) {
+        Trabajador trabajador = new Trabajador();
+        trabajador.edad = 25;
+        trabajador.nombre = ("richard");
+        trabajador.telefono = ("310726235");
+        trabajador.credito = 1000000000;
+        trabajador.salario = 10000000;
+
+        System.out.println(trabajador.edad);
+        System.out.println(trabajador.nombre);
+        System.out.println(trabajador.telefono);
+        System.out.println(trabajador.credito);
+        System.out.println(trabajador.salario);
+    }
+}
+    class Persona {
+        int edad;
+        String nombre;
+        String telefono;
+    }
+
+    class Cliente extends Persona {
+        int credito;
+    }
+
+    final class Trabajador extends Cliente {
+        int salario;
+    }
